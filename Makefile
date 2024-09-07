@@ -110,7 +110,7 @@ debug: ${LIBFT} ${MLX} ${MAPS}
 	${CC} -g3 main.c ${SRCS} -I./${INC} -L${LIBFT_DIR} -lft -I./${MLX_INC} ${MLX_LIB} ${LIBS} -o ${NAME}
 
 run: ${NAME}
-	@./fdf maps/42.fdf
+	@./fdf ${MAPS}/42.fdf
 
 sclean: fclean
 	rm -rf ${MLX_DIR} ${MAPS}
